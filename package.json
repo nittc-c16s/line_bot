@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/nittc-c16s/line_bot/issues"
   },
-  "homepage": "https://github.com/nittc-c16s/line_bot#readme"
+  "homepage": "https://github.com/nittc-c16s/line_bot#readme",
+  "dependencies": {
+    "@line/bot-sdk": "^6.8.2",
+    "axios": "^0.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
 }
