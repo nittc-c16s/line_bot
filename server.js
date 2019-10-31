@@ -11,9 +11,31 @@ const config = {
 };
 
 const app = express();
+const client = new line.Client(config)
 
 app.post("/webhook", line.middleware(config), (req, res) => {
   Promise.all(req.body.events.map(handleEvent)).then(result =>
     res.json(result)
   );
 });
+
+let handleEvent = (event) => {
+  if(event.type !== 'message'){
+    return Promise.resolve(null)
+  }else{
+    switch(event.message.text){
+      case 'hello':
+        return client.replyMessage(
+          event.replyToken,
+          {
+            type: 'text',
+            text: 'world'
+          }
+        )
+    }
+  }
+}
+
+app.listen(PORT, () => {
+  console.log('bot start')
+})
