@@ -1,0 +1,19 @@
+{
+  "name": "line_bot",
+  "version": "1.0.0",
+  "description": "じゅぎょう を つうち する らいん の ぼっと",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nittc-c16s/line_bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nittc-c16s/line_bot/issues"
+  },
+  "homepage": "https://github.com/nittc-c16s/line_bot#readme"
+}
